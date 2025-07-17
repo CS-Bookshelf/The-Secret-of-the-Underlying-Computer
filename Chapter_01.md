@@ -23,7 +23,7 @@ CPU 는 단세포 생물처럼 매우 원시적
 
 → 최초의 인간이 CPU와 소통을 위해서는 1번의 방법뿐이었다. e.g) punched card를 이용해 컴퓨터 작업 제어
 
-[![image.png](attachment:5c2ab4ee-a5f3-4bca-8a96-2e7acbcfceda:image.png)](https://www.notion.so/Section1-2333ce319d3480f6899ecfb7690047d8?source=copy_link#2333ce319d3480139e42d163ec90cb5b)
+[[![image.png](attachment:5c2ab4ee-a5f3-4bca-8a96-2e7acbcfceda:image.png)](https://www.notion.so/Section1-2333ce319d3480f6899ecfb7690047d8?source=copy_link#2333ce319d3480139e42d163ec90cb5b)](https://www.google.com/imgres?q=punched%20card&imgurl=https%3A%2F%2Fwww.ibm.com%2Fcontent%2Fdam%2Fconnectedassets-adobe-cms%2Fworldwide-content%2Farc%2Fcf%2Ful%2Fg%2F48%2F00%2F1954_Business%2520Machines_Russian_Translation_040.component.offering-item-xl.ts%3D1711716463056.jpg%2Fcontent%2Fadobe-cms%2Fus%2Fen%2Fhistory%2Fpunched-card%2Fjcr%3Acontent%2Froot%2Ftable_of_contents%2Fbody%2Fcontent_section_styled%2Fcontent-section-body%2Fitem_horizontal_grou%2Fitems%2Foffering_item%2Fimage&imgrefurl=https%3A%2F%2Fwww.ibm.com%2Fhistory%2Fpunched-card&docid=7uyJtzR113KFXM&tbnid=FV9UChxoGXJFTM&vet=12ahUKEwjqjPCiosSOAxW9rlYBHR8PNIUQM3oECBkQAA..i&w=1120&h=629&hcb=2&ved=2ahUKEwjqjPCiosSOAxW9rlYBHR8PNIUQM3oECBkQAA)
 
 → Code, Source 였다.
 
