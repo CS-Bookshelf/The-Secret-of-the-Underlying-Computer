@@ -23,7 +23,7 @@ CPU 는 단세포 생물처럼 매우 원시적
 
 → 최초의 인간이 CPU와 소통을 위해서는 1번의 방법뿐이었다. e.g) punched card를 이용해 컴퓨터 작업 제어
 
-![image.png](attachment:5c2ab4ee-a5f3-4bca-8a96-2e7acbcfceda:image.png)
+[![image.png](attachment:5c2ab4ee-a5f3-4bca-8a96-2e7acbcfceda:image.png)](https://www.notion.so/Section1-2333ce319d3480f6899ecfb7690047d8?source=copy_link#2333ce319d3480139e42d163ec90cb5b)
 
 → Code, Source 였다.
 
