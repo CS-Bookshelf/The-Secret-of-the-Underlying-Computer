@@ -1,4 +1,5 @@
-
+## 컴퓨터 밑바닥의 비밀
+----
 <img width="933" height="1200" alt="image" src="https://github.com/user-attachments/assets/7eb90ed2-c464-4ad0-bc76-1ca5a273c4eb" />
 
 
