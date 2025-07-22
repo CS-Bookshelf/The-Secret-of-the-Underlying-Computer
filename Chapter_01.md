@@ -316,7 +316,7 @@ $$
 
 이는 고등학교 점화식의 개념과 동일하며, 재귀로 이를 표현 가능하다.
 
-![image.png](attachment:faa73da8-93df-4065-b0cc-38a2d85fea9c:image.png)
+[![image.png](attachment:faa73da8-93df-4065-b0cc-38a2d85fea9c:image.png)](https://www.hello-algo.com/en/chapter_computational_complexity/iteration_and_recursion.assets/recursion_tree.png)
 
 세상의 모든 코드는 복잡해도 이를 활용해 모두 구문(syntax)으로 표현 가능하다.
 
@@ -330,7 +330,7 @@ $$
 
 ---
 
-![image.png](attachment:ce954535-6923-4bae-820c-57816d0d0463:image.png)
+[https://tecoble.techcourse.co.kr/static/14e0e85f3cec0cb24a0fbd194cfeb647/7f061/recursive.png ](https://tecoble.techcourse.co.kr/static/14e0e85f3cec0cb24a0fbd194cfeb647/7f061/recursive.png)
 
 ### 구문 트리 (syntax tree)
 
