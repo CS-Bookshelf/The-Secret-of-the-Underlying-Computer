@@ -247,7 +247,6 @@ CPU가 그랬듯 저수준 언어를 이용한 프로그래밍도 데이터 전�
 
 ## 1.1.4 - 가득한 규칙: 고급 프로그래밍 언어의 시작
 
----
 
 저수준 언어 표현을 보면 세부사항이 규칙 또는 패턴이 있음이 알 수 있다. 명령어들은 단도직입적인 문장 또는 문(statement) 이다. 
 
@@ -305,7 +304,6 @@ func abc:
 
 ## 1.1.5 - <인셉션>과 재귀: 코드 본질
 
----
 
 blablabla 의 내용으로는 문장이든 조건, 순환, 함수 호출이 들어올 수 있음. 
 
@@ -317,7 +315,7 @@ $$
 
 이는 고등학교 점화식의 개념과 동일하며, 재귀로 이를 표현 가능하다.
 
-<img src = "https://www.hello-algo.com/en/chapter_computational_complexity/iteration_and_recursion.assets/recursion_tree.png", width = 500 />
+![recursion tree](https://www.hello-algo.com/en/chapter_computational_complexity/iteration_and_recursion.assets/recursion_tree.png)
 
 세상의 모든 코드는 복잡해도 이를 활용해 모두 구문(syntax)으로 표현 가능하다.
 
@@ -331,8 +329,7 @@ $$
 
 ---
 
-<img src = "https://upload.wikimedia.org/wikipedia/commons/f/f7/RecursiveTree.JPG", width = 200 /> 
-
+![recursion tree img](https://upload.wikimedia.org/wikipedia/commons/f/f7/RecursiveTree.JPG)
 ### 구문 트리 (syntax tree)
 
 statement - if
