@@ -19,7 +19,7 @@
 101001010101011
 ```
 
----
+<br>
 
 ## 1.1.2 - 어셈블리어 등장
 
@@ -35,7 +35,7 @@ call puts
 
 - 어셈블리어 → 기계어로 번역하는 프로그램 = **어셈블러**
 
----
+
 
 ## 1.1.3 - 저수준 vs 고수준 언어
 
@@ -57,8 +57,9 @@ call puts
 ```
 
 → 이런 반복/조건/함수를 추상화한 언어 필요
+
 <br>
----
+
 
 ## 1.1.4 - 고급 프로그래밍 언어의 탄생
 
@@ -81,7 +82,7 @@ def 함수명(매개변수):
 
 → 프로그래밍 언어가 점점 **사람의 사고방식**에 가까워짐
 
----
+<br>
 
 ## 1.1.5 - 인셉션과 재귀: 코드의 본질
 
@@ -97,7 +98,7 @@ def fib(n):
 
 - → 모든 프로그램은 이러한 **중첩된 구조 (syntax tree)** 로 표현 가능
 
----
+<br>
 
 ## 1.1.6 - 구문 트리와 번역
 
@@ -113,7 +114,7 @@ statement - if
 
 → 이 구문 트리를 기반으로 CPU가 이해할 수 있는 명령어로 **번역**
 
----
+<br>
 
 ## 1.1.7 - 우수한 번역가: 컴파일러
 
@@ -124,7 +125,7 @@ statement - if
 코드 → 컴파일러 → 실행 파일 → CPU 실행
 ```
 
----
+<br>
 
 ## 1.1.8 - 해석형 언어와 가상 머신
 
@@ -138,7 +139,7 @@ statement - if
 
 - Python, Java 등은 이 방식을 채택
 
----
+<br>
 
 ## 요약 정리
 
@@ -316,7 +317,7 @@ $$
 
 이는 고등학교 점화식의 개념과 동일하며, 재귀로 이를 표현 가능하다.
 
-<img src = https://www.hello-algo.com/en/chapter_computational_complexity/iteration_and_recursion.assets/recursion_tree.png, width = 500>
+<img src = "https://www.hello-algo.com/en/chapter_computational_complexity/iteration_and_recursion.assets/recursion_tree.png", width = 500 />
 
 세상의 모든 코드는 복잡해도 이를 활용해 모두 구문(syntax)으로 표현 가능하다.
 
@@ -330,7 +331,8 @@ $$
 
 ---
 
-<img src = https://tecoble.techcourse.co.kr/static/14e0e85f3cec0cb24a0fbd194cfeb647/7f061/recursive.png, width = 200> 
+<img src = "https://upload.wikimedia.org/wikipedia/commons/f/f7/RecursiveTree.JPG", width = 200 /> 
+
 ### 구문 트리 (syntax tree)
 
 statement - if
