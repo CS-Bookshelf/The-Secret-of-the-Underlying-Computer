@@ -316,7 +316,7 @@ $$
 
 이는 고등학교 점화식의 개념과 동일하며, 재귀로 이를 표현 가능하다.
 
-[![image.png](attachment:faa73da8-93df-4065-b0cc-38a2d85fea9c:image.png)](https://www.hello-algo.com/en/chapter_computational_complexity/iteration_and_recursion.assets/recursion_tree.png)
+<img src = https://www.hello-algo.com/en/chapter_computational_complexity/iteration_and_recursion.assets/recursion_tree.png, width = 500>
 
 세상의 모든 코드는 복잡해도 이를 활용해 모두 구문(syntax)으로 표현 가능하다.
 
@@ -330,8 +330,7 @@ $$
 
 ---
 
-[https://tecoble.techcourse.co.kr/static/14e0e85f3cec0cb24a0fbd194cfeb647/7f061/recursive.png ](https://tecoble.techcourse.co.kr/static/14e0e85f3cec0cb24a0fbd194cfeb647/7f061/recursive.png)
-
+<img src = https://tecoble.techcourse.co.kr/static/14e0e85f3cec0cb24a0fbd194cfeb647/7f061/recursive.png, width = 200> 
 ### 구문 트리 (syntax tree)
 
 statement - if
@@ -393,11 +392,11 @@ statement - if
 
 코드 구문 → 구문 트리 → 기계 명령어 번역 → CPU 직접 넘김 or
 
-                                                            → 바이트 코드 변환 후 가상 머신으로 넘겨 실행
-
-<br>
+                                        → 바이트 코드 변환 후 가상 머신으로 넘겨 실행
 
 </aside>
+
+<br>
 
 고급 언어의 경우 추상적 표현이 뛰어나 사용하기 쉬움
 
