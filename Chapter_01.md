@@ -325,7 +325,6 @@ $$
 
 ## 1.1.6 - 컴퓨터가 재귀를 이해하도록 만들기
 
----
 
 ![recursion tree img](https://upload.wikimedia.org/wikipedia/commons/f/f7/RecursiveTree.JPG)
 ### 구문 트리 (syntax tree)
