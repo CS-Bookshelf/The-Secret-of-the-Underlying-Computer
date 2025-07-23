@@ -13,6 +13,7 @@
 110101010101010
 101001010101011
 ```
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/310fbc7d-073a-4a81-ac75-5f8eb13f1af7" />
 
 <br>
 
@@ -93,6 +94,7 @@ def fib(n):
 ```
 
 - → 모든 프로그램은 이러한 **중첩된 구조 (syntax tree)** 로 표현 가능
+![recursion tree](https://www.hello-algo.com/en/chapter_computational_complexity/iteration_and_recursion.assets/recursion_tree.png)
 
 <br>
 
@@ -109,6 +111,7 @@ statement - if
 ```
 
 → 이 구문 트리를 기반으로 CPU가 이해할 수 있는 명령어로 **번역**
+![recursion tree img](https://upload.wikimedia.org/wikipedia/commons/f/f7/RecursiveTree.JPG)
 
 <br>
 
@@ -155,246 +158,4 @@ CPU → 0, 1 (on-off) 만을 이해할 수 있다.
 
 <br>
 
-## 1.1.1 - 창세기 : CPU는 똑똑한 바보
-
-
-
-CPU 는 단세포 생물처럼 매우 원시적
-
-→ 데이터 전송, 간단한 연산만 가능.
-
-→ But 연산 속도가 매우 빠름. 이는 CPU의 멍청함을 상쇄하고도 남는다.
-
-⇒ 다른 종의 탄생. CPU 
-
-프로그래머(인간), CPU 간의 의사소통 방식은 두 가지가 있다.
-
-1. 인간이 CPU의 언어로 말하기
-2. CPU가 인간의 언어로 말하기
-
-→ 최초의 인간이 CPU와 소통을 위해서는 1번의 방법뿐이었다. e.g) punched card를 이용해 컴퓨터 작업 제어
-
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/310fbc7d-073a-4a81-ac75-5f8eb13f1af7" />
-
-→ Code, Source 였다.
-
-```python
-110101010101010
-101001010101011
-100010101001010
-010101010101001
-```
-
-<br>
-
-## 1.1.2 - 어셈블리어 등장
-
-
-
-CPU의 언어로만 대화하는 것은 어렵고 번거로움 → 인간 언어로 말할 수 있게 연구를 했음.
-
-CPU는 가산 명령어, 점프 명령어 등 몇 가지 명령어만 실행할 수 있음.
-
-⇒ 기계어와 해당 특정 작업을 간단히 대응시켜 기계어를 인간이 읽고 이해할 수 있는 단어와 대응 시켰음.
-
-```python
-sub $8, %rsp
-mov $.LC0, %edi
-call puts
-mov $0, %eax
-```
-
-기계 명령어를 0과 1로 구성된 바이너리로 변환하는 프로그램을 통해 바꾼다.
-
-⇒ 이렇게 탄생한 것이 처음으로 인간이 직접 인식할 수 있는 프로그래밍 언어 어셈블리어(Assembly language) 이다.
-
-<br>
-
-## 1.1.3 - 저수준 계층의 세부 사항 대 고수준 계층의 추상화
-
-
-
-어셈블리어는 기계어와 마찬가지로 저수준 언어(low-level language) 이다.
-
-→ 인간이 모든 세부 사항에 대해 신경 써야 한다는 의미.
-
-CPU가 그랬듯 저수준 언어를 이용한 프로그래밍도 데이터 전송, 간단한 연산 정도만 가능함.
-
-→ 이를 통해 복잡한 문제 구현 필요했음.
-
-추상적 표현 : “저에게 물 한 잔 주세요”
-
-저수준 언어 표현 : 
-
-```python
-오른쪽 다리를 내딛는다
-멈춘다
-왼쪽 다리를 내딛는다
-멈춘다
-앞의 걸음을 음수대 옆에 도착할 때까지 반복한다
-.
-.
-.
-```
-
-**⇒ 인간의 추상적인 표현을 CPU가 이해할 수 있는 구체적인 구현으로 자동으로 변환하는 방법이 필요하다.**
-
-<br>
-
-## 1.1.4 - 가득한 규칙: 고급 프로그래밍 언어의 시작
-
-
-저수준 언어 표현을 보면 세부사항이 규칙 또는 패턴이 있음이 알 수 있다. 명령어들은 단도직입적인 문장 또는 문(statement) 이다. 
-
-또한, 특정 상황에 따라 어떤 명령어를 실행할지 결정해야 하는 선택이 필요하다.
-
-→ “만약 …라면 …하고, 그렇지 않으면 …한다”
-
-```python
-if ***
-	blablabla
-else ***
-	blablabla
-```
-
-→ 또는 명령어를 계속 반복해야 하는 경우
-
-```python
-while ***
-	blablabla
-```
-
-명령어에서 개별적인 세부사항의 차이만 있고 반복되는 것이 있다. 이때의 차이를 매개변수(parameter) 라 한다. 이를 분리하고 매개변수를 제외한 나머지 명령어를 하나로 묶어 하나의 코드(함수화) 지정하면 된다.
-
-⇒ 함수 탄생.
-
-```python
-func abc:
-	blablabla
-```
-
-정리
-
-```python
-// 조건에 따른 이동
-if ***
-	blablabla
-else ***
-	blablabla
-	
-// 순환
-while ***
-	blablabla
-	
-// 함수
-func abc:
-	blablabla
-```
-
-⇒ 두 가지 문제 발생
-
-1. 이 안에 있는 blablablasms 무엇인가?
-2. 앞의 코드처럼 인간이 인식할 수 있는 문자열을 어떻게 CPU가 인식할 수 있는 기계 명령어로 변환할까?
-
-<br>
-
-## 1.1.5 - <인셉션>과 재귀: 코드 본질
-
-
-blablabla 의 내용으로는 문장이든 조건, 순환, 함수 호출이 들어올 수 있음. 
-
-→ blablabla 안에 또 blablabla가 들어갈 수 있다. 이는 재귀로 표현될 수 있고 이는 영화 인셉션에서 꿈 속의 꿈과 비슷한 양상을 띤다.
-
-$$
-f(x) = f(x-1) + f(x-2)
-$$
-
-이는 고등학교 점화식의 개념과 동일하며, 재귀로 이를 표현 가능하다.
-
-![recursion tree](https://www.hello-algo.com/en/chapter_computational_complexity/iteration_and_recursion.assets/recursion_tree.png)
-
-세상의 모든 코드는 복잡해도 이를 활용해 모두 구문(syntax)으로 표현 가능하다.
-
-⇒ 인간이 인식할 수 있는 프로그래밍 언어 발명
-
-⇒ 2번째 문제 해결은 아직 안 됐다.
-
-<br>
-
-## 1.1.6 - 컴퓨터가 재귀를 이해하도록 만들기
-
-
-![recursion tree img](https://upload.wikimedia.org/wikipedia/commons/f/f7/RecursiveTree.JPG)
-### 구문 트리 (syntax tree)
-
-statement - if
-
-            - bool
-
-            - statements - if
-
-                                 - bool
-
-                                 - statements
-
-               …
-
-<br>
-
-## 1.1.7 - 우수한 번역가 : 컴파일러
-
-리프 노드의 구문을 기계 명령어로 번역하여 CPU가 인식할 수 있는 기계 명령어로 번역하는 역할
-
-⇒ 고급 프로그래밍 언어 발명.
-
-→ 이 시점부터 개발자는 인간이 인식할 수 있는 언어를 사용해 코드를 작성했음. 
-
-컴파일러 : 개발자가 작성한 코드를 CPU가 인식 가능한 기계 명령어로 번역.
-
-<br>
-
-## 1.1.8 - 해석형 언어의 탄생
-
-<aside>
-💡
-
-코드 → 컴파일러 → 실행 파일 → CPU
-
-</aside>
-
-→ 실행 파일의 경우 CPU에 따라 달라진다.
-
-형식이 다른 CPU마다 고유한 언어가 있어 이를 통합할 필요가 있었다. 
-
-표준 명령어 집합을 정의해 CPU의 기계 명령어 실행 과정을 모방하는 프로그램을 작성하여 각각의 CPU 마다 상응하는 시뮬레이션 프로그램을 준비하면 서로 다른 플랫폼에서 사용 가능하다.
-
-⇒ 한 번의 코드 작성으로 어디서나 그 코드를 실행 가능.
-
-위의 CPU 시뮬레이션 프로그램 → 가상 머신 (Virtual Machine) or 인터프리터 (Interpreter) 라고도 한다.
-
-<aside>
-💡
-
-코드 → 표준 명령어 → 인터프리터 (가상 머신) → 각 CPU
-
-</aside>
-
-<br>
-
-<aside>
-💡
-
-코드 구문 → 구문 트리 → 기계 명령어 번역 → CPU 직접 넘김 or
-
-                                        → 바이트 코드 변환 후 가상 머신으로 넘겨 실행
-
-</aside>
-
-<br>
-
-고급 언어의 경우 추상적 표현이 뛰어나 사용하기 쉬움
-
-→ But, 저수준 계층의 제어 능력 낮음.
-
-⇒ 저수준 세부 사항을 제어할 수 있어야 하는 운영체제 중 일부는 어셈블리어로 구현됨.
 
