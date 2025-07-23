@@ -12,5 +12,5 @@
 
 ## 🎯컴퓨터 밑바닥의 비밀
 
-1. [프로그래밍 언어부터 프로그래밍 실행까지, 이렇게 진행된다]
+1. [프로그래밍 언어부터 프로그래밍 실행까지, 이렇게 진행된다](https://github.com/CS-Bookshelf/The-Secret-of-the-Underlying-Computer/tree/0db6628550c9083163cab705df3942112fce48d7/Chapter_01)
 2. 
